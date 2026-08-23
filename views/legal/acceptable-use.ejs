@@ -1,3 +1,46 @@
 <%- include('../partials/head') %>
-<main id="main"><section class="pageHero compact"><div class="container"><span class="kicker">Legal</span><h1>Acceptable Use Policy</h1><p>Responsible use protects customers, networks and the wider internet.</p></div></section><section class="section"><div class="container legalProse"><h2>Permitted use</h2><p>Services may be used for lawful hosting, development, business systems, private connectivity and other legitimate workloads that do not harm third parties or infrastructure.</p><h2>Prohibited activity</h2><p>You must not use VPN4U services for malware distribution, phishing, credential theft, botnets, unauthorised scanning or intrusion, denial-of-service attacks, spam, deliberate copyright infringement, child sexual abuse material, fraud, threats, unlawful surveillance, trafficking in illegal goods or services, or activity that violates applicable law.</p><h2>Network abuse</h2><p>Activities that materially degrade shared networks, circumvent technical restrictions, spoof network identity for abuse, generate abusive automation or interfere with other customers may be blocked or suspended.</p><h2>VPN use</h2><p>VPN access is a privacy and connectivity tool, not permission to break the law or hide abusive behaviour. Customers remain responsible for activity originating from their accounts.</p><h2>Security incidents</h2><p>If a compromised service is causing harm, we may temporarily isolate, null-route or suspend it while the issue is investigated. We will try to work with the customer where doing so is safe and practical.</p><h2>Reporting</h2><p>Send abuse reports to <a href="mailto:<%= site.emails.abuse %>"><%= site.emails.abuse %></a> with relevant IP addresses, timestamps, logs or evidence.</p></div></section></main>
+<main id="main">
+  <section class="pageHero compact"><div class="container"><span class="kicker">Legal</span><h1>Acceptable Use Policy</h1><p>Responsible use protects customers, networks and the wider internet.</p></div></section>
+  <section class="section"><div class="container legalProse">
+    <h2>1. Scope</h2>
+    <p>This Acceptable Use Policy applies to VPN4U VPS hosting, dedicated servers, VPN connectivity and related infrastructure services. It forms part of the Terms of Service.</p>
+
+    <h2>2. Permitted use</h2>
+    <p>Services may be used for lawful hosting, development, websites, APIs, business systems, private connectivity, virtualisation, game services, self-hosted applications and other legitimate workloads that do not harm third parties or infrastructure.</p>
+
+    <h2>3. Illegal and harmful activity</h2>
+    <p>You must not use VPN4U services for activity that is unlawful in the applicable jurisdiction or that is primarily intended to facilitate criminal, fraudulent, abusive or harmful conduct.</p>
+    <p>Examples of prohibited activity include malware distribution, ransomware, phishing, credential theft, botnets, unauthorised intrusion, denial-of-service attacks, fraud, trafficking in illegal goods or services, child sexual abuse material, threats of violence, unlawful surveillance and activity that materially infringes the rights of others.</p>
+
+    <h2>4. Spam and messaging abuse</h2>
+    <p>Unsolicited bulk email, spam campaigns, abusive messaging automation, harvested mailing lists, deceptive sender identities and infrastructure primarily used to facilitate spam are prohibited. Legitimate transactional or consent-based messaging must still comply with applicable law and reasonable network standards.</p>
+
+    <h2>5. Scanning, attacks and security testing</h2>
+    <p>Unauthorised vulnerability scanning, credential attacks, exploitation, intrusion attempts and disruptive security testing against systems you do not own or have permission to test are prohibited. Legitimate security research must be authorised by the relevant system owner and carried out in a way that does not create material risk to VPN4U, upstream networks or third parties.</p>
+
+    <h2>6. Network abuse</h2>
+    <p>Activities that materially degrade shared networks, circumvent technical restrictions, spoof network identity for abuse, generate harmful automated traffic, create excessive attack traffic or interfere with other customers may be filtered, rate-limited, null-routed or suspended.</p>
+
+    <h2>7. Copyright and content complaints</h2>
+    <p>Customers must respect applicable intellectual-property law. Credible complaints should identify the relevant service, IP address, hostname or URL and provide enough information for the report to be assessed. VPN4U may forward appropriate complaints to the customer or an upstream provider where necessary.</p>
+
+    <h2>8. VPN use</h2>
+    <p>VPN access is a privacy and connectivity tool, not permission to break the law or hide abusive behaviour. The same prohibition on malware, attacks, spam, fraud and other harmful activity applies to traffic carried through a VPN4U VPN service.</p>
+
+    <h2>9. Resource and platform integrity</h2>
+    <p>You must not deliberately bypass plan limits, interfere with virtualisation or platform controls, consume resources in a way intended to degrade other customers, or use a service in a manner that creates an unreasonable operational or security risk to shared infrastructure.</p>
+
+    <h2>10. Compromised systems</h2>
+    <p>If a customer's system is compromised and begins causing harm, VPN4U may temporarily isolate, filter, null-route or suspend the affected service while the incident is investigated. Where practical, we will work with the customer to restore service after the risk has been addressed.</p>
+
+    <h2>11. Enforcement</h2>
+    <p>Our response depends on severity, urgency, evidence, history and technical risk. Action can include warning the customer, requesting remediation, rate limiting, blocking specific traffic, isolating a service, temporary suspension or termination. Immediate action may be taken where necessary to protect infrastructure, third parties or the public.</p>
+
+    <h2>12. Reporting abuse</h2>
+    <p>Send abuse reports to <a href="mailto:<%= site.emails.abuse %>"><%= site.emails.abuse %></a>. Include relevant IP addresses or hostnames, timestamps with timezone, a concise explanation and supporting logs, headers, URLs or other evidence where available.</p>
+
+    <h2>13. Questions</h2>
+    <p>If you are unsure whether a planned workload is permitted, contact <a href="mailto:<%= site.emails.sales %>"><%= site.emails.sales %></a> before ordering.</p>
+  </div></section>
+</main>
 <%- include('../partials/footer') %>

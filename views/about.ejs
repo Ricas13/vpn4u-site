@@ -1,3 +1,75 @@
 <%- include('partials/head') %>
-<main id="main"><section class="pageHero"><div class="container"><span class="kicker">About VPN4U</span><h1>A smaller infrastructure provider built around clarity.</h1><p>VPN4U provides VPS hosting, dedicated servers and private VPN connectivity to individuals, developers and businesses.</p></div></section><section class="section"><div class="container proseGrid"><div><h2>What we do</h2><p>We package infrastructure from established datacentre and network partners into straightforward services sold and supported under the VPN4U brand. Our role is to make the commercial relationship simpler: clear products, clear support contacts and one place to manage an order.</p><p>We focus on practical hosting and connectivity rather than claiming to operate a global hyperscale network ourselves.</p></div><div><h2>Who we serve</h2><p>Our services are designed for website operators, developers, small businesses, self-hosters and customers who need private network connectivity.</p><p>More complex requirements can be handled as a custom quote where capacity is available.</p></div></div></section><section class="section sectionMuted"><div class="container"><div class="featureGrid"><article><h3>Sales</h3><p><a href="mailto:<%= site.emails.sales %>"><%= site.emails.sales %></a></p></article><article><h3>Support</h3><p><a href="mailto:<%= site.emails.support %>"><%= site.emails.support %></a></p></article><article><h3>Abuse</h3><p><a href="mailto:<%= site.emails.abuse %>"><%= site.emails.abuse %></a></p></article><article><h3>Privacy</h3><p><a href="mailto:<%= site.emails.privacy %>"><%= site.emails.privacy %></a></p></article></div></div></section></main>
+<main id="main">
+  <section class="pageHero">
+    <div class="container">
+      <span class="kicker">About VPN4U</span>
+      <h1>Practical infrastructure, sold with a clear point of contact.</h1>
+      <p>VPN4U provides virtual servers, dedicated compute and private VPN connectivity for individuals, developers and businesses that want straightforward products without enterprise sales complexity.</p>
+      <div class="heroPills"><span>Independent provider</span><span>UK-based service</span><span>Supplier-neutral infrastructure</span><span>Human support</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container proseGrid">
+      <div>
+        <span class="kicker">Our role</span>
+        <h2>One commercial relationship for infrastructure and connectivity.</h2>
+        <p>We source capacity from established datacentre, hosting and network operators, package that capacity into clearly described VPN4U services and remain the customer-facing point of contact for orders, provisioning and support.</p>
+        <p>That means customers do not need to understand our supplier relationships to buy a service from us. The service description, price, support channel and applicable policies are provided by VPN4U.</p>
+        <p>We do not claim to own every datacentre, server chassis, fibre route or network used to deliver a service. Where third-party infrastructure is involved, VPN4U remains responsible for managing the commercial relationship with the customer.</p>
+      </div>
+      <div>
+        <span class="kicker">Why VPN4U</span>
+        <h2>A smaller provider can be easier to deal with.</h2>
+        <p>Our aim is not to offer every possible hosting product. We focus on a compact catalogue of useful VPS, dedicated-server and VPN options, then help customers choose an appropriate configuration.</p>
+        <p>Where a requirement falls outside the standard catalogue, we can review location, CPU, memory, storage, network and software requirements as a custom enquiry rather than forcing the customer into an unsuitable package.</p>
+        <p>Orders are reviewed before payment is requested so that hardware stock, location and material service details can be confirmed first.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sectionMuted">
+    <div class="container">
+      <div class="sectionHead"><div><span class="kicker">How we work</span><h2>Simple operating principles</h2></div><p>These principles apply across our hosting and connectivity services.</p></div>
+      <div class="featureGrid">
+        <article><h3>Describe what is supplied</h3><p>We aim to publish meaningful specifications such as compute, memory, storage, traffic, location and delivery model before an order is accepted.</p></article>
+        <article><h3>Confirm before charging</h3><p>Dedicated stock and regional capacity can change. We confirm availability and the final configuration before requesting payment.</p></article>
+        <article><h3>Keep support accountable</h3><p>Customers purchase from VPN4U and should contact VPN4U first for sales, provisioning, account and service-support matters.</p></article>
+        <article><h3>Operate responsibly</h3><p>Our infrastructure is for lawful use. We maintain a published Acceptable Use Policy and a dedicated abuse-reporting channel.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <span class="kicker">Who we serve</span>
+        <h2>Built for common real-world workloads.</h2>
+        <p>Typical customers include developers, website operators, agencies, small businesses, self-hosters, remote teams and customers who need private encrypted connectivity.</p>
+        <p>Common workloads include websites, APIs, databases, development environments, container hosts, virtualisation, game services, private business systems and encrypted remote connectivity.</p>
+        <p>Customers with unusual resource, location or networking requirements can contact sales for a custom review.</p>
+      </div>
+      <div class="factPanel">
+        <div><span>Virtual infrastructure</span><strong>VPS hosting</strong><small>NVMe virtual compute with multiple resource tiers and regional options.</small></div>
+        <div><span>Physical infrastructure</span><strong>Dedicated servers</strong><small>Bare-metal AMD systems for predictable compute, memory and storage performance.</small></div>
+        <div><span>Private connectivity</span><strong>VPN access</strong><small>Encrypted connectivity using established VPN protocols on supported plans.</small></div>
+        <div><span>Custom requirements</span><strong>Configuration review</strong><small>Sales can review non-standard CPU, memory, storage, location and network needs.</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sectionMuted">
+    <div class="container">
+      <div class="sectionHead"><div><span class="kicker">Contact VPN4U</span><h2>Use the right channel and reach a person.</h2></div><p>Include an order or service reference when contacting us about an existing request.</p></div>
+      <div class="featureGrid">
+        <article><h3>Sales</h3><p>Product, configuration and availability questions.</p><p><a href="mailto:<%= site.emails.sales %>"><%= site.emails.sales %></a></p></article>
+        <article><h3>Support</h3><p>Existing-service, provisioning and account assistance.</p><p><a href="mailto:<%= site.emails.support %>"><%= site.emails.support %></a></p></article>
+        <article><h3>Abuse</h3><p>Reports involving hosted content, network activity or policy violations.</p><p><a href="mailto:<%= site.emails.abuse %>"><%= site.emails.abuse %></a></p></article>
+        <article><h3>Privacy</h3><p>Data-protection questions and privacy-rights requests.</p><p><a href="mailto:<%= site.emails.privacy %>"><%= site.emails.privacy %></a></p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section"><div class="container cta"><div><span class="kicker">Need help choosing?</span><h2>Tell us what you need to run.</h2><p>We can review workload, location, CPU, memory, storage and network requirements before you place an order.</p></div><a class="button" href="/contact">Contact sales</a></div></section>
+</main>
 <%- include('partials/footer') %>

@@ -1,3 +1,38 @@
 <%- include('../partials/head') %>
-<main id="main"><section class="pageHero compact"><div class="container"><span class="kicker">Trust & safety</span><h1>Abuse Reporting</h1><p>Report activity that appears to violate law or our Acceptable Use Policy.</p></div></section><section class="section"><div class="container legalProse"><h2>How to report abuse</h2><p>Email <a href="mailto:<%= site.emails.abuse %>"><%= site.emails.abuse %></a>. Please include the relevant IP address or hostname, timestamps with timezone, a concise description of the issue, and supporting logs, URLs or headers where available.</p><h2>What happens next</h2><p>We review credible reports and may request more information. Appropriate action can include contacting the customer, restricting traffic, isolating a service, preserving relevant records, suspending access or escalating to an upstream provider or competent authority where necessary.</p><h2>Good-faith reporting</h2><p>Please do not attempt to gain unauthorised access, exploit systems or collect unnecessary personal data while investigating a report. Security researchers should minimise impact and provide enough information for us to reproduce or assess the issue safely.</p></div></section></main>
+<main id="main">
+  <section class="pageHero compact"><div class="container"><span class="kicker">Trust & safety</span><h1>Abuse Reporting</h1><p>Report activity that appears to violate law, third-party rights or our Acceptable Use Policy.</p></div></section>
+  <section class="section"><div class="container legalProse">
+    <h2>1. How to report abuse</h2>
+    <p>Email <a href="mailto:<%= site.emails.abuse %>"><%= site.emails.abuse %></a>. Please include enough information for us to identify the service and assess the report.</p>
+    <p>Useful information normally includes the relevant IP address or hostname, timestamps with timezone, affected URL or service where applicable, a concise description of the issue, and supporting logs, headers, screenshots or other evidence.</p>
+
+    <h2>2. Reports we can assess</h2>
+    <p>Examples include phishing, malware, spam, attacks, compromised systems, fraud, prohibited content, credible copyright complaints, network abuse and other activity that may violate our Acceptable Use Policy.</p>
+
+    <h2>3. What happens next</h2>
+    <p>We review credible reports and may request additional information. Appropriate action depends on the severity, urgency, available evidence and technical risk.</p>
+    <p>Action can include contacting the customer, requesting remediation, restricting specific traffic, isolating or null-routing a service, preserving relevant records, suspending access, terminating service or escalating to an upstream infrastructure provider or competent authority where reasonably necessary.</p>
+
+    <h2>4. Emergency situations</h2>
+    <p>Where activity creates an immediate security, safety or network risk, VPN4U may take temporary protective action before the full investigation is complete. This can include filtering or suspending the affected service while evidence is reviewed.</p>
+
+    <h2>5. Copyright and content complaints</h2>
+    <p>Provide the specific material or service complained about, the basis of the complaint, your contact information and enough information to allow the matter to be assessed. We may forward an appropriate complaint to the customer or relevant upstream provider where necessary to investigate or resolve it.</p>
+
+    <h2>6. Law-enforcement requests</h2>
+    <p>Requests from law-enforcement or public authorities should identify the requesting authority, legal basis, relevant account or technical identifiers, scope of information requested and an official contact method. VPN4U will assess requests in accordance with applicable law.</p>
+
+    <h2>7. Good-faith security reporting</h2>
+    <p>Please do not attempt to gain unauthorised access, disrupt services, access customer data or collect unnecessary personal information while investigating a potential vulnerability. Security researchers should minimise impact and provide enough information for us to reproduce or assess the issue safely.</p>
+
+    <h2>8. False or incomplete reports</h2>
+    <p>We may be unable to act on reports that do not identify the relevant service, provide meaningful evidence or contain sufficient information to assess the allegation. Knowingly false or abusive reporting may itself be disregarded or escalated where appropriate.</p>
+
+    <h2>9. Privacy</h2>
+    <p>Information supplied in an abuse report may need to be shared with the affected customer, an upstream provider, legal adviser or competent authority where reasonably necessary to investigate, defend or resolve the matter. We seek to limit disclosure to what is relevant.</p>
+
+    <h2>10. Contact</h2>
+    <p>Abuse and security complaints: <a href="mailto:<%= site.emails.abuse %>"><%= site.emails.abuse %></a>.</p>
+  </div></section>
+</main>
 <%- include('../partials/footer') %>
