@@ -1,0 +1,15 @@
+services:
+  vpn4u-site:
+    build: .
+    container_name: vpn4u-site
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      PUBLIC_URL: https://vpn4u.cc
+      TRUST_PROXY: "1"
+      RUNTIME_DIR: /app/runtime
+      # ADMIN_TOKEN: replace-with-a-long-random-token
+    volumes:
+      - ./runtime:/app/runtime
+    ports:
+      - "127.0.0.1:3000:3000"
