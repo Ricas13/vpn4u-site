@@ -1,3 +1,56 @@
 <%- include('../partials/head') %>
-<main id="main"><section class="pageHero compact"><div class="container"><span class="kicker">Legal</span><h1>Privacy Policy</h1><p>Last updated: 23 August 2026</p></div></section><section class="section"><div class="container legalProse"><h2>What we collect</h2><p>When you contact us or submit an order request we may collect your name, email address, company, country, requested service, order requirements and correspondence. If you become a customer, we may also process billing, account, service, network and support information needed to provide the service and meet legal obligations.</p><h2>Why we use it</h2><p>We use personal information to respond to enquiries, assess and fulfil orders, provide support, protect services from abuse and fraud, maintain records, comply with legal obligations and communicate material service information.</p><h2>Infrastructure providers</h2><p>Service delivery may require limited information to be processed by datacentre, hosting, connectivity, payment, email or other service providers. We seek to share only information reasonably necessary for the relevant purpose.</p><h2>Retention</h2><p>Enquiry and account information is kept only for as long as reasonably necessary for the purpose collected, legal obligations, security, dispute handling and accounting requirements.</p><h2>Your rights</h2><p>Depending on applicable law, you may have rights to access, correct, erase, restrict or object to processing of your personal data. Contact <a href="mailto:<%= site.emails.privacy %>"><%= site.emails.privacy %></a> to make a privacy request.</p><h2>Security</h2><p>We use reasonable technical and organisational measures to protect information. No internet service can guarantee absolute security.</p><h2>Website tracking</h2><p>This website is designed to operate without advertising trackers or analytics cookies by default. See our Cookie Policy for more information.</p></div></section></main>
+<main id="main">
+  <section class="pageHero compact"><div class="container"><span class="kicker">Legal</span><h1>Privacy Policy</h1><p>Last updated: 23 August 2026</p></div></section>
+  <section class="section"><div class="container legalProse">
+    <h2>1. Who this policy applies to</h2>
+    <p>This policy explains how VPN4U handles personal information when you visit the website, contact us, submit an order request, become a customer, receive support or otherwise interact with our services.</p>
+    <% if(site.legal.legalName){ %><p>For the purposes of this policy, VPN4U is operated by <strong><%= site.legal.legalName %></strong><% if(site.legal.registeredAddress){ %>, <%= site.legal.registeredAddress %><% } %>.</p><% } %>
+
+    <h2>2. Information we may collect</h2>
+    <p>When you contact us or submit an order request we may collect your name, email address, company, country, requested service, technical requirements and correspondence. If you become a customer, we may also process billing information, account details, service identifiers, assigned network resources, provisioning records and support history.</p>
+    <p>Security and service operation can also generate technical information such as timestamps, IP addresses, authentication or access events, abuse reports, system events and network information reasonably necessary to operate, secure or troubleshoot the service.</p>
+
+    <h2>3. Why we use personal information</h2>
+    <p>We may use personal information to respond to enquiries, assess and accept orders, provision services, provide support, administer accounts, communicate service information, manage billing, protect services from fraud or abuse, investigate security incidents, maintain records and comply with legal obligations.</p>
+
+    <h2>4. Legal bases</h2>
+    <p>Depending on the circumstances and applicable law, processing may be necessary to take steps at your request before entering into a contract, perform a contract, comply with legal obligations, pursue legitimate interests such as operating and securing our services, or act on consent where consent is the appropriate basis.</p>
+
+    <h2>5. Infrastructure and service providers</h2>
+    <p>Service delivery may require limited information to be processed by datacentre, hosting, connectivity, payment, email, security, software or other service providers. We seek to share only information reasonably necessary for the relevant purpose and do not sell customer personal information to advertisers.</p>
+    <p>Where infrastructure is supplied through a partner, technical identifiers or support information may need to be shared to provision, maintain, troubleshoot or investigate the relevant service.</p>
+
+    <h2>6. International processing</h2>
+    <p>Some services or providers may operate outside the United Kingdom. Where personal information is transferred internationally, we seek to use an appropriate lawful mechanism or other protection required by applicable data-protection law.</p>
+
+    <h2>7. Payments</h2>
+    <p>The current website does not directly collect live card payments. If payment processing is introduced, card or payment credentials may be collected and processed by the selected payment provider rather than stored directly by VPN4U. This policy will be updated where necessary before a materially different payment flow is introduced.</p>
+
+    <h2>8. VPN and network information</h2>
+    <p>We do not make an absolute “zero logs” promise. Depending on the service design and operational need, limited account, security, connection or diagnostic information may be processed where reasonably necessary to provide, protect or troubleshoot the service, respond to abuse, enforce policy or comply with law.</p>
+    <p>We do not use VPN traffic data for behavioural advertising. Customers should not treat a VPN as a guarantee of anonymity against every website, device, account or lawful process.</p>
+
+    <h2>9. Website forms and enquiry records</h2>
+    <p>Information submitted through the contact and order-request forms is stored so that we can review and respond to the request. Please do not include passwords, private keys, payment-card numbers or unnecessary sensitive information in free-text form fields.</p>
+
+    <h2>10. Retention</h2>
+    <p>We retain enquiry, account, billing, service, security and support information only for as long as reasonably necessary for the purpose collected, contractual administration, security, dispute handling, accounting, fraud prevention and legal obligations. Different categories of information may therefore have different retention periods.</p>
+
+    <h2>11. Security</h2>
+    <p>We use reasonable technical and organisational measures intended to protect personal information, including access controls and security measures appropriate to the service. No internet service can guarantee absolute security.</p>
+
+    <h2>12. Your rights</h2>
+    <p>Depending on applicable law, you may have rights to access, correct, erase, restrict or object to processing of your personal data, request portability in certain circumstances, or withdraw consent where processing is based on consent.</p>
+    <p>Contact <a href="mailto:<%= site.emails.privacy %>"><%= site.emails.privacy %></a> to make a privacy request. We may need to verify your identity before acting on a request.</p>
+
+    <h2>13. Website tracking and cookies</h2>
+    <p>This public website is designed to operate without advertising trackers or analytics cookies by default. The enquiry and order-request forms do not require a customer-login cookie. See the Cookie Policy for more information.</p>
+
+    <h2>14. Changes to this policy</h2>
+    <p>We may update this policy when our services, providers, legal obligations or data-processing practices materially change. The current version will remain available on this page.</p>
+
+    <h2>15. Contact</h2>
+    <p>Privacy questions and data-protection requests can be sent to <a href="mailto:<%= site.emails.privacy %>"><%= site.emails.privacy %></a>.</p>
+  </div></section>
+</main>
 <%- include('../partials/footer') %>
