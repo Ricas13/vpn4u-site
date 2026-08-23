@@ -1,89 +1,54 @@
 <%- include('partials/head') %>
 <main id="main">
   <section class="pageHero">
-    <div class="container">
-      <span class="kicker">Infrastructure model</span>
-      <h1>Professional datacentre capacity, delivered through VPN4U.</h1>
-      <p>VPN4U is an independent service provider. We source compute and network capacity through established infrastructure partners and package it into services sold and supported under the VPN4U brand.</p>
-      <div class="heroPills"><span>Datacentre partners</span><span>Supplier-neutral service</span><span>Capacity checked before payment</span><span>VPN4U support</span></div>
+    <div class="container visualHero">
+      <div class="pageHeroCopy">
+        <span class="kicker">Infrastructure</span>
+        <h1>Established datacentre capacity, delivered through VPN4U.</h1>
+        <p>We are an independent service provider. We source compute and network capacity from established infrastructure partners and remain the customer-facing point of contact.</p>
+      </div>
+      <img class="pageArtwork" src="/images/hero-infrastructure.svg" alt="Illustration of connected datacentre and network services">
     </div>
   </section>
 
   <section class="section">
-    <div class="container split">
-      <div>
-        <span class="kicker">Our delivery model</span>
-        <h2>Infrastructure does not need to be owned by one company to be a real service.</h2>
-        <p>Hosting and connectivity services often involve several specialist organisations: datacentre operators, network carriers, hardware suppliers, virtualisation platforms and service providers. VPN4U's role is to select upstream capacity, define the customer-facing product and manage the commercial relationship.</p>
-        <p>We do not claim that every datacentre, fibre route or physical server chassis used by VPN4U is owned by VPN4U. We instead describe the product the customer receives and remain the first point of contact for orders, provisioning and support.</p>
-        <p>Supplier relationships can differ by service, region, stock and technical requirement. That allows us to source a suitable platform without making customers manage multiple upstream accounts.</p>
-      </div>
-      <div class="factPanel">
-        <div><span>VPS platform</span><strong>NVMe virtual compute</strong><small>Multiple resource tiers, public IP connectivity and regional deployment options.</small></div>
-        <div><span>Dedicated platform</span><strong>AMD bare-metal compute</strong><small>Physical server resources, NVMe storage and dedicated network uplinks.</small></div>
-        <div><span>Connectivity</span><strong>Encrypted VPN access</strong><small>WireGuard and OpenVPN on supported plans with multi-device options.</small></div>
-        <div><span>Commercial relationship</span><strong>VPN4U remains your contact</strong><small>Sales, order acceptance, provisioning communication and first-line support are handled by VPN4U.</small></div>
+    <div class="container">
+      <span class="kicker">The model</span>
+      <h2>Simple for the customer, specialised behind the scenes.</h2>
+      <p style="max-width:760px;color:var(--muted)">Hosting and connectivity often involve datacentre operators, network carriers, hardware platforms and service providers. VPN4U combines those capabilities into a clearly described customer-facing service without pretending every underlying asset is owned by us.</p>
+      <div class="simpleSteps">
+        <article class="simpleStep"><span>01</span><h3>Infrastructure partners</h3><p>Established operators provide the underlying datacentre, compute or network capacity.</p></article>
+        <article class="simpleStep"><span>02</span><h3>VPN4U packages the service</h3><p>We define the product, pricing, order process and customer-facing support model.</p></article>
+        <article class="simpleStep"><span>03</span><h3>You deal with VPN4U</h3><p>Orders, provisioning communication and first-line support come through one provider.</p></article>
       </div>
     </div>
   </section>
 
   <section class="section sectionMuted">
     <div class="container">
-      <div class="sectionHead"><div><span class="kicker">Service lifecycle</span><h2>From enquiry to active service</h2></div><p>We use a confirmation-first order process so the customer knows what can actually be supplied before payment is requested.</p></div>
-      <div class="featureGrid">
-        <article><h3>1. Choose or enquire</h3><p>Select a standard plan or tell us the CPU, memory, storage, location and network requirements for a custom configuration.</p></article>
-        <article><h3>2. We verify capacity</h3><p>VPN4U checks stock, regional capacity and any material configuration constraints before the order is accepted.</p></article>
-        <article><h3>3. Terms are confirmed</h3><p>The material specification and final amount are confirmed before payment is requested. Additional licences or setup charges are identified here.</p></article>
-        <article><h3>4. Service is provisioned</h3><p>Once accepted, the service is provisioned and access details are delivered using the contact information associated with the order.</p></article>
+      <span class="kicker">Platforms</span>
+      <h2>Three service types.</h2>
+      <div class="serviceGrid">
+        <article class="serviceCard"><img src="/images/vps.svg" alt="Virtual server illustration"><div class="serviceCardBody"><span class="tag">VPS</span><h3>Virtual compute</h3><p>NVMe virtual servers with public networking and regional deployment options.</p><a href="/vps">View VPS →</a></div></article>
+        <article class="serviceCard"><img src="/images/dedicated.svg" alt="Dedicated server illustration"><div class="serviceCardBody"><span class="tag">Dedicated</span><h3>Bare metal</h3><p>Physical AMD compute for workloads that need predictable dedicated resources.</p><a href="/dedicated">View dedicated →</a></div></article>
+        <article class="serviceCard"><img src="/images/vpn.svg" alt="VPN security illustration"><div class="serviceCardBody"><span class="tag">VPN</span><h3>Private connectivity</h3><p>Encrypted connectivity using established VPN protocols on supported plans.</p><a href="/vpn">View VPN →</a></div></article>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container proseGrid">
-      <div>
-        <span class="kicker">VPS infrastructure</span>
-        <h2>Virtual compute for flexible workloads.</h2>
-        <p>Our VPS catalogue is designed around modern virtual compute with NVMe storage, public networking and generous transfer allowances. Regional availability can include Europe, North America and Asia-Pacific.</p>
-        <p>VPS hosting is primarily self-managed infrastructure. The customer controls the operating system and applications and is responsible for software configuration, security updates and backups unless managed services are explicitly included in an accepted order.</p>
-      </div>
-      <div>
-        <span class="kicker">Dedicated infrastructure</span>
-        <h2>Physical resources for predictable performance.</h2>
-        <p>Dedicated servers provide physical CPU, memory and local storage resources for workloads that benefit from bare-metal performance or larger resource footprints.</p>
-        <p>Because dedicated hardware is physical inventory, exact CPU, memory, disk and location combinations are subject to live availability. We therefore check stock before requesting payment.</p>
+    <div class="container">
+      <span class="kicker">Ordering</span>
+      <h2>Availability is confirmed before payment.</h2>
+      <div class="simpleTrust">
+        <div><strong>Choose</strong><span>Select a standard plan or send a custom requirement.</span></div>
+        <div><strong>Verify</strong><span>We check hardware, region and material configuration details.</span></div>
+        <div><strong>Confirm</strong><span>The final specification and amount are confirmed before payment.</span></div>
+        <div><strong>Provision</strong><span>Once accepted, the service is prepared and access details are delivered.</span></div>
       </div>
     </div>
   </section>
 
-  <section class="section sectionMuted">
-    <div class="container split">
-      <div>
-        <span class="kicker">Network and availability</span>
-        <h2>Capacity and resilience depend on the selected service.</h2>
-        <p>Network topology, DDoS protections, uplink capacity and maintenance arrangements vary by product and location. We do not advertise a universal SLA or mitigation capacity that does not apply equally to every service.</p>
-        <p>If a workload has a material requirement for a specific throughput, availability target, DDoS profile, IP allocation or region, tell sales before ordering so that the requirement can be assessed against the selected infrastructure.</p>
-      </div>
-      <div class="principles">
-        <div><strong>01</strong><span><b>Accurate descriptions</b><small>We aim to describe the service actually being supplied, including resource limits, location and material restrictions.</small></span></div>
-        <div><strong>02</strong><span><b>Availability before payment</b><small>Hardware and regional capacity can change. We confirm the requested service before asking for payment.</small></span></div>
-        <div><strong>03</strong><span><b>Responsible use</b><small>All services are subject to our Acceptable Use Policy and applicable law.</small></span></div>
-        <div><strong>04</strong><span><b>Support ownership</b><small>Customers purchase from VPN4U and should contact VPN4U first for service and commercial matters.</small></span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container faqList">
-      <div class="sectionHead"><div><span class="kicker">Infrastructure FAQ</span><h2>Questions about the delivery model</h2></div></div>
-      <details open><summary>Why does VPN4U use infrastructure partners?</summary><p>Specialist datacentre and network operators already maintain mature facilities, connectivity and hardware platforms. Using those platforms lets VPN4U focus on the service catalogue, customer relationship and support rather than claiming to duplicate every part of the infrastructure stack.</p></details>
-      <details><summary>Does that mean my contract is with the upstream datacentre?</summary><p>No, unless a particular order explicitly says otherwise. The customer-facing VPN4U service is requested from and supported by VPN4U. Upstream suppliers may be involved in service delivery behind the scenes.</p></details>
-      <details><summary>Can the underlying supplier change?</summary><p>Supplier relationships can vary by product, region, stock or future service changes. A material change that affects an accepted customer's service should be handled in accordance with the applicable order and terms.</p></details>
-      <details><summary>Can I request a particular region or technical characteristic?</summary><p>Yes. Tell sales the requirement before ordering. We can confirm whether a suitable location, network profile or hardware configuration is available.</p></details>
-      <details><summary>Do you guarantee 100% uptime?</summary><p>No. We do not claim uninterrupted service or a universal SLA unless a specific written service-level commitment is included in the accepted order.</p></details>
-    </div>
-  </section>
-
-  <section class="section sectionMuted"><div class="container cta"><div><span class="kicker">Have a technical requirement?</span><h2>Describe it before you buy.</h2><p>Tell us the workload, preferred region, compute, memory, storage and network requirements. We can confirm whether the standard catalogue is a fit.</p></div><a class="button" href="/contact">Contact sales</a></div></section>
+  <section class="section sectionMuted"><div class="container cta"><div><span class="kicker">Have a technical requirement?</span><h2>Describe it before you buy.</h2><p>Tell us the workload, region, compute, memory, storage and network requirements. We will confirm whether the standard catalogue fits.</p></div><a class="button" href="/contact">Contact sales</a></div></section>
 </main>
 <%- include('partials/footer') %>
