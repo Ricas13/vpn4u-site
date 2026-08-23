@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title><%= title %></title>
+  <meta name="description" content="<%= description %>">
+  <link rel="canonical" href="<%= canonical %>">
+  <meta name="theme-color" content="#08111f">
+  <meta property="og:title" content="<%= title %>">
+  <meta property="og:description" content="<%= description %>">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<%= canonical %>">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="siteHeader">
+  <div class="container navWrap">
+    <a class="brand" href="/" aria-label="VPN4U home"><span class="brandMark">V4</span><span>VPN4U</span></a>
+    <button class="navToggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>Menu</button>
+    <nav class="mainNav" aria-label="Main navigation" data-nav>
+      <a class="<%= path==='/vps'?'active':'' %>" href="/vps">VPS</a>
+      <a class="<%= path==='/dedicated'?'active':'' %>" href="/dedicated">Dedicated</a>
+      <a class="<%= path==='/vpn'?'active':'' %>" href="/vpn">VPN</a>
+      <a class="<%= path==='/infrastructure'?'active':'' %>" href="/infrastructure">Infrastructure</a>
+      <a class="<%= path==='/about'?'active':'' %>" href="/about">About</a>
+      <a class="button buttonSmall" href="/contact">Contact sales</a>
+    </nav>
+  </div>
+</header>

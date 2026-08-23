@@ -1,0 +1,29 @@
+<%- include('partials/head') %>
+<main id="main">
+  <section class="hero">
+    <div class="container heroGrid">
+      <div>
+        <div class="eyebrow"><span class="liveDot"></span> Independent infrastructure & privacy services</div>
+        <h1>Compute and connectivity, without the enterprise complexity.</h1>
+        <p class="heroLead">VPS hosting, dedicated servers and private VPN access with clear specifications, practical support and straightforward monthly pricing.</p>
+        <div class="heroActions"><a class="button" href="/vps">Explore VPS plans</a><a class="button secondary" href="/dedicated">View dedicated servers</a></div>
+        <div class="trustRow"><span>UK-based service</span><span>Clear GBP pricing</span><span>Human support</span><span>Partner datacentres</span></div>
+      </div>
+      <div class="heroPanel" aria-label="Service overview">
+        <div class="terminalTop"><span></span><span></span><span></span><small>vpn4u infrastructure</small></div>
+        <div class="heroMetric"><span>Virtual compute</span><strong>Up to 24 vCPU</strong><small>NVMe · generous traffic · global regions</small></div>
+        <div class="heroMetric"><span>Dedicated compute</span><strong>Up to 48 physical cores</strong><small>NVMe · full root · dedicated uplink</small></div>
+        <div class="heroMetric"><span>Private connectivity</span><strong>WireGuard + OpenVPN</strong><small>Multi-device plans · encrypted transport</small></div>
+        <div class="statusStrip"><span><i></i> Sales enquiries open</span><span>Response target: 1 business day</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section"><div class="container"><div class="sectionHead"><div><span class="kicker">What we provide</span><h2>Three practical infrastructure products</h2></div><p>No confusing bundles. Pick the level of control and performance you need.</p></div><div class="serviceGrid">
+    <article class="serviceCard"><div class="serviceIcon">V</div><span class="tag">Virtual compute</span><h3>Cloud VPS</h3><p>Fast NVMe virtual servers for websites, APIs, development and production workloads.</p><ul><li>Modern AMD-backed compute</li><li>Up to 120 GiB RAM</li><li>30 TB outbound traffic</li></ul><a href="/vps">View VPS plans →</a></article>
+    <article class="serviceCard featured"><div class="serviceIcon">D</div><span class="tag">Bare metal</span><h3>Dedicated servers</h3><p>Physical servers for workloads that need predictable compute, memory and storage performance.</p><ul><li>Ryzen and EPYC options</li><li>NVMe datacentre SSDs</li><li>Dedicated 1 Gbps uplink</li></ul><a href="/dedicated">View dedicated servers →</a></article>
+    <article class="serviceCard"><div class="serviceIcon">P</div><span class="tag">Private connectivity</span><h3>Private VPN</h3><p>Encrypted connectivity for personal devices and small teams using established VPN protocols.</p><ul><li>WireGuard & OpenVPN</li><li>Multi-device access</li><li>No fixed bandwidth cap</li></ul><a href="/vpn">View VPN plans →</a></article>
+  </div></div></section>
+  <section class="section sectionMuted"><div class="container split"><div><span class="kicker">How VPN4U works</span><h2>Independent service, established infrastructure.</h2><p>We source capacity from established datacentre and network operators, then provide the customer-facing service under VPN4U. That lets us focus on straightforward products, support and account management instead of pretending to be a hyperscale network operator.</p><a class="textLink" href="/infrastructure">Read about our infrastructure model →</a></div><div class="principles"><div><strong>01</strong><span><b>Clear specifications</b><small>We publish the CPU, memory, storage, traffic and delivery model before you order.</small></span></div><div><strong>02</strong><span><b>Availability confirmed first</b><small>Dedicated stock and regional availability are confirmed before payment is requested.</small></span></div><div><strong>03</strong><span><b>One point of contact</b><small>VPN4U remains your commercial and support contact for the service you purchase.</small></span></div></div></div></section>
+  <section class="section"><div class="container cta"><div><span class="kicker">Need a specific configuration?</span><h2>Tell us what you're trying to run.</h2><p>We can help match CPU, memory, storage, location and network requirements before you place an order.</p></div><a class="button" href="/contact">Contact sales</a></div></section>
+</main>
+<%- include('partials/footer') %>

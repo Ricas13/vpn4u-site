@@ -1,0 +1,27 @@
+<footer class="siteFooter">
+  <div class="container footerGrid">
+    <div>
+      <a class="brand footerBrand" href="/"><span class="brandMark">V4</span><span>VPN4U</span></a>
+      <p>Independent VPS, dedicated server and privacy connectivity services for customers in the UK and beyond.</p>
+      <p class="fine">Infrastructure is sourced through established datacentre and network partners. VPN4U manages the customer relationship, service configuration, billing communication and support.</p>
+    </div>
+    <div><strong>Services</strong><a href="/vps">Virtual private servers</a><a href="/dedicated">Dedicated servers</a><a href="/vpn">Private VPN</a><a href="/infrastructure">Infrastructure</a></div>
+    <div><strong>Company</strong><a href="/about">About</a><a href="/faq">FAQ</a><a href="/contact">Contact</a><a href="mailto:<%= site.emails.abuse %>">Report abuse</a></div>
+    <div><strong>Legal</strong><a href="/legal/terms">Terms</a><a href="/legal/privacy">Privacy</a><a href="/legal/acceptable-use">Acceptable use</a><a href="/legal/refunds">Cancellation & refunds</a><a href="/legal/cookies">Cookies</a><a href="/legal/abuse">Abuse policy</a></div>
+  </div>
+  <div class="container footerBottom">
+    <div>© <span data-year></span> VPN4U. <%= site.country %>.</div>
+    <div><a href="mailto:<%= site.emails.sales %>"><%= site.emails.sales %></a> · <a href="mailto:<%= site.emails.support %>"><%= site.emails.support %></a></div>
+  </div>
+  <% if(site.legal.legalName || site.legal.companyNumber || site.legal.registeredAddress){ %>
+  <div class="container legalIdentity">
+    <% if(site.legal.legalName){ %><span>Operated by <%= site.legal.legalName %></span><% } %>
+    <% if(site.legal.companyNumber){ %><span>Company no. <%= site.legal.companyNumber %></span><% } %>
+    <% if(site.legal.vatNumber){ %><span>VAT <%= site.legal.vatNumber %></span><% } %>
+    <% if(site.legal.registeredAddress){ %><span><%= site.legal.registeredAddress %></span><% } %>
+  </div>
+  <% } %>
+</footer>
+<script src="/js/site.js" defer></script>
+</body>
+</html>
