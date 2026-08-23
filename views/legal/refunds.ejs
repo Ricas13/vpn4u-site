@@ -1,3 +1,44 @@
 <%- include('../partials/head') %>
-<main id="main"><section class="pageHero compact"><div class="container"><span class="kicker">Legal</span><h1>Cancellation & Refund Policy</h1><p>How service cancellation and refund requests are handled.</p></div></section><section class="section"><div class="container legalProse"><h2>Before payment</h2><p>VPN4U confirms availability and the final configuration before requesting payment. If we cannot supply the requested service, no payment should be required for that unavailable order.</p><h2>VPS and VPN services</h2><p>Where consumer law gives you a statutory cancellation right, that right applies. If you expressly ask us to begin a digital service immediately, your statutory rights may be affected once performance begins. Outside mandatory rights, refunds for activated VPS or VPN periods are assessed case by case and are not guaranteed after resources have been provisioned.</p><h2>Dedicated servers</h2><p>Dedicated servers reserve physical capacity and may incur upstream setup or allocation costs. Setup charges and completed provisioning are generally non-refundable except where required by law or where VPN4U is unable to deliver the accepted service.</p><h2>Renewals</h2><p>Customers should request cancellation before the next renewal or invoice date stated in their order or billing communication. Cancellation normally stops future renewal; it does not automatically refund an already delivered service period.</p><h2>Service failure</h2><p>If VPN4U materially fails to provide an accepted service, contact <a href="mailto:<%= site.emails.support %>"><%= site.emails.support %></a>. Depending on the circumstances, we may provide repair, replacement capacity, service credit or a refund where appropriate.</p></div></section></main>
+<main id="main">
+  <section class="pageHero compact"><div class="container"><span class="kicker">Legal</span><h1>Cancellation & Refund Policy</h1><p>How cancellations, renewals and refund requests are handled.</p></div></section>
+  <section class="section"><div class="container legalProse">
+    <h2>1. Before payment</h2>
+    <p>VPN4U confirms availability and the material service configuration before requesting payment. If we cannot supply the requested service, no payment should be required for that unavailable order.</p>
+
+    <h2>2. Before provisioning begins</h2>
+    <p>If you ask to cancel after an order has been accepted but before provisioning or chargeable setup work begins, contact support as soon as possible. Where no non-recoverable cost has been incurred, we will normally cancel the order and refund any amount already paid.</p>
+
+    <h2>3. VPS services</h2>
+    <p>VPS capacity can be provisioned quickly and begins incurring infrastructure cost once activated. Where consumer law gives you a statutory cancellation right, that right applies. If you expressly request immediate performance of a digital or hosting service, your statutory rights may be affected once performance begins.</p>
+    <p>Outside mandatory legal rights, refunds for an already provisioned VPS period are assessed case by case and are not guaranteed. A technical problem should first be reported to support so that we have a reasonable opportunity to investigate and remedy it.</p>
+
+    <h2>4. VPN services</h2>
+    <p>Where consumer law provides a cancellation right, that right applies. If you request immediate activation, statutory rights may be affected once service performance begins. Outside mandatory rights, activated VPN periods are generally not refundable simply because the service was used and later no longer required.</p>
+
+    <h2>5. Dedicated servers</h2>
+    <p>Dedicated servers reserve physical capacity and may incur upstream allocation, hardware, licence or setup costs. Setup charges, custom work and completed provisioning are generally non-refundable once those costs have been incurred, except where required by law or where VPN4U is unable to deliver the accepted service.</p>
+    <p>For this reason, dedicated-server specifications and stock are confirmed before payment is requested wherever practical.</p>
+
+    <h2>6. Software licences, IP resources and add-ons</h2>
+    <p>Third-party licences, additional IP allocations, control panels, custom storage, domain-related charges or other add-ons may have separate non-refundable costs once ordered or activated. Any material charge should be identified before the order is accepted.</p>
+
+    <h2>7. Renewals</h2>
+    <p>Customers should request cancellation before the next renewal or invoice date stated in their order or billing communication. Cancellation normally stops future renewal; it does not automatically refund a service period that has already begun.</p>
+
+    <h2>8. How to cancel</h2>
+    <p>Email <a href="mailto:<%= site.emails.support %>"><%= site.emails.support %></a> from the account contact address where possible and include the order or service reference. We may request reasonable verification before processing a cancellation that affects an active service.</p>
+
+    <h2>9. Service failure</h2>
+    <p>If VPN4U materially fails to provide an accepted service, contact support promptly. Depending on the circumstances and applicable rights, an appropriate remedy may include repair, replacement capacity, service credit, partial refund or full refund.</p>
+
+    <h2>10. Abuse, suspension and policy breaches</h2>
+    <p>Suspension or termination resulting from unlawful activity, fraud, non-payment or a material breach of the Terms or Acceptable Use Policy does not automatically create a right to a refund. Mandatory legal rights are unaffected.</p>
+
+    <h2>11. Refund method</h2>
+    <p>Where a refund is approved, it will normally be returned using the original payment route where practical. Processing time can depend on the payment provider or banking system.</p>
+
+    <h2>12. Contact</h2>
+    <p>Cancellation and refund requests should be sent to <a href="mailto:<%= site.emails.support %>"><%= site.emails.support %></a>.</p>
+  </div></section>
+</main>
 <%- include('../partials/footer') %>
