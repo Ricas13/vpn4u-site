@@ -1,3 +1,68 @@
 <%- include('../partials/head') %>
-<main id="main"><section class="pageHero compact"><div class="container"><span class="kicker">Legal</span><h1>Terms of Service</h1><p>Last updated: 23 August 2026</p></div></section><section class="section"><div class="container legalProse"><h2>1. About these terms</h2><p>These terms govern services supplied under the VPN4U brand. By requesting, ordering or using a service, you agree to these terms together with the Acceptable Use Policy and any service-specific information shown in your accepted order.</p><h2>2. Service description</h2><p>VPN4U provides virtual server hosting, dedicated server access, VPN connectivity and related infrastructure services. Infrastructure may be supplied using third-party datacentre, network, hardware and software providers. Unless explicitly stated otherwise, VPN4U does not represent that it owns every underlying datacentre, network or physical server used to deliver a service.</p><h2>3. Orders and acceptance</h2><p>Submitting an order request does not guarantee acceptance. We may verify identity, intended use, location, availability and configuration before accepting an order. Dedicated hardware and regional capacity are subject to availability. A contract begins when we confirm acceptance of the order or activate the service, whichever occurs first.</p><h2>4. Charges</h2><p>Prices shown on the website are indicative retail prices in GBP unless stated otherwise. Taxes, software licences, optional IP addresses, control panels, support add-ons and custom hardware may be charged separately. The final price is confirmed before payment is requested.</p><h2>5. Customer responsibilities</h2><p>You are responsible for securing your credentials, operating systems, applications and data, maintaining appropriate backups, installing security updates and ensuring that your use complies with law and our Acceptable Use Policy. Unless a managed service explicitly includes these tasks, VPN4U does not administer your applications or guarantee the integrity of customer data.</p><h2>6. Availability and maintenance</h2><p>We aim to provide reliable service but do not guarantee uninterrupted availability unless a written service-level commitment is included in your order. Maintenance, upstream faults, hardware failures, attacks and events outside reasonable control can affect service.</p><h2>7. Suspension and termination</h2><p>We may suspend or terminate service where reasonably necessary to address non-payment, security threats, unlawful activity, material policy breaches, abuse complaints, network harm or risk to other customers or providers. Where practical, we will give notice and an opportunity to remedy the issue.</p><h2>8. Liability</h2><p>To the extent permitted by law, VPN4U is not responsible for indirect or consequential loss, loss of profit, loss of business, or loss of data arising from use of the service. Nothing in these terms excludes liability that cannot legally be excluded.</p><h2>9. Changes</h2><p>We may update these terms to reflect legal, security, operational or service changes. Material changes will apply prospectively where required by law.</p><h2>10. Contact</h2><p>Questions about these terms can be sent to <a href="mailto:<%= site.emails.support %>"><%= site.emails.support %></a>.</p></div></section></main>
+<main id="main">
+  <section class="pageHero compact"><div class="container"><span class="kicker">Legal</span><h1>Terms of Service</h1><p>Last updated: 23 August 2026</p></div></section>
+  <section class="section"><div class="container legalProse">
+    <h2>1. About these terms</h2>
+    <p>These terms govern services supplied under the VPN4U brand. By requesting, ordering or using a service, you agree to these terms together with the Acceptable Use Policy, Privacy Policy, Cancellation & Refund Policy and any service-specific information shown in your accepted order.</p>
+    <% if(site.legal.legalName){ %><p>VPN4U is operated by <strong><%= site.legal.legalName %></strong><% if(site.legal.companyNumber){ %>, company number <%= site.legal.companyNumber %><% } %>.<% if(site.legal.registeredAddress){ %> Registered address: <%= site.legal.registeredAddress %>.<% } %></p><% } %>
+
+    <h2>2. Services we provide</h2>
+    <p>VPN4U provides virtual server hosting, dedicated server access, VPN connectivity and related infrastructure services. Infrastructure may be supplied using third-party datacentre, hosting, network, hardware and software providers. Unless explicitly stated otherwise, VPN4U does not represent that it owns every underlying datacentre, network or physical server used to deliver a service.</p>
+    <p>Standard VPS and dedicated-server products are primarily self-managed infrastructure. Unless an accepted order explicitly includes managed administration, you remain responsible for the operating system, applications, security configuration, software updates, monitoring and backups.</p>
+
+    <h2>3. Product information and availability</h2>
+    <p>We aim to keep website descriptions accurate, but hardware stock, regional capacity, network characteristics and upstream pricing can change. Website prices and specifications are therefore invitations to submit an order request rather than a guarantee that a particular configuration is immediately available.</p>
+    <p>Where a material specification, location, price or setup charge changes before acceptance, we will confirm the change before requesting payment.</p>
+
+    <h2>4. Orders and contract formation</h2>
+    <p>Submitting an order request does not guarantee acceptance and does not by itself create an obligation to supply the service. We may verify identity, intended use, location, technical requirements, availability and configuration before accepting an order.</p>
+    <p>A contract begins when we confirm acceptance of the order or activate the service, whichever occurs first. Dedicated hardware and regional capacity remain subject to availability until the order is accepted.</p>
+
+    <h2>5. Charges, taxes and renewals</h2>
+    <p>Prices shown on the website are indicative retail prices in GBP unless stated otherwise. Taxes, software licences, optional IP addresses, control panels, support add-ons, custom hardware, setup work or other requested extras may be charged separately.</p>
+    <p>The final amount is confirmed before payment is requested. Where a service renews, the renewal period and applicable price are set out in the accepted order, invoice or billing communication. We may change future renewal pricing on reasonable notice where permitted by law.</p>
+
+    <h2>6. Provisioning and delivery</h2>
+    <p>Indicative provisioning times are estimates rather than guaranteed deadlines unless a written commitment says otherwise. VPS and VPN services are commonly provisioned within one business day after approval, while dedicated servers can require 1–3 business days or longer where stock, custom hardware or manual work is involved.</p>
+    <p>You are responsible for providing accurate contact information so that service credentials, provisioning notices and important account communications can be delivered.</p>
+
+    <h2>7. Customer responsibilities</h2>
+    <p>You are responsible for securing account and service credentials, operating systems, applications and data; maintaining appropriate backups; installing security updates; monitoring your services; and ensuring that your use complies with law and our Acceptable Use Policy.</p>
+    <p>You must not share credentials in a way that creates an unreasonable security risk or use a service to facilitate prohibited activity. You remain responsible for activity carried out through your account or service unless caused by VPN4U's own breach.</p>
+
+    <h2>8. IP addresses, software and licences</h2>
+    <p>IP addresses and other network resources are provided for use with the service and are not sold to the customer. Additional addressing may require technical justification and additional charges. Software licences, operating systems and control panels may be subject to separate third-party licence terms.</p>
+
+    <h2>9. Backups and customer data</h2>
+    <p>Backups are not included unless they are explicitly listed in the accepted order. Even where a backup feature is supplied, customers should maintain an independent backup appropriate to the importance of their data. VPN4U does not guarantee that deleted, corrupted or compromised customer data can be recovered.</p>
+
+    <h2>10. Availability, maintenance and upstream services</h2>
+    <p>We aim to provide reliable service but do not guarantee uninterrupted availability unless a written service-level commitment is included in the accepted order. Planned maintenance, emergency maintenance, upstream faults, hardware failures, attacks, network congestion and events outside reasonable control can affect service.</p>
+    <p>Where appropriate, VPN4U may work with an upstream provider to investigate or restore a service. This does not change the customer's obligation to contact VPN4U first for the VPN4U service.</p>
+
+    <h2>11. Security, abuse and emergency action</h2>
+    <p>We may take proportionate technical action where a service creates an immediate security, abuse or network risk. This can include traffic filtering, null-routing, isolation, temporary suspension or other measures reasonably necessary to protect customers, third parties or infrastructure.</p>
+    <p>Abuse handling is governed by the Acceptable Use Policy and Abuse Reporting page.</p>
+
+    <h2>12. Suspension and termination</h2>
+    <p>We may suspend or terminate service where reasonably necessary to address non-payment, security threats, unlawful activity, material policy breaches, credible abuse complaints, network harm, fraudulent activity or risk to other customers or providers. Where practical and safe, we will give notice and an opportunity to remedy the issue.</p>
+    <p>You may request cancellation in accordance with the Cancellation & Refund Policy and the billing terms of the accepted order.</p>
+
+    <h2>13. Refunds and service credits</h2>
+    <p>Refunds are handled under our Cancellation & Refund Policy and applicable law. Dedicated hardware, setup work, licence charges and already delivered service periods may be non-refundable once costs have been incurred or performance has begun, except where law requires otherwise or VPN4U is unable to provide the accepted service.</p>
+
+    <h2>14. Liability</h2>
+    <p>Nothing in these terms excludes liability that cannot legally be excluded. Subject to that, VPN4U is not responsible for indirect or consequential loss, loss of profit, loss of opportunity, loss of business or loss of data arising from use of the service.</p>
+    <p>Customers using infrastructure for business-critical workloads should design appropriate redundancy, monitoring, security and backup arrangements rather than relying on a single service as the only copy or point of operation.</p>
+
+    <h2>15. Third-party rights and services</h2>
+    <p>Some services rely on third-party infrastructure, software or networks. Those providers may impose technical, legal or acceptable-use requirements that VPN4U must observe. We may take reasonable steps necessary to comply with those requirements where they affect the service.</p>
+
+    <h2>16. Changes to services or terms</h2>
+    <p>We may update these terms to reflect legal, security, operational or service changes. Material changes will apply prospectively where required by law. We may also retire or replace products where upstream availability changes, while handling active accepted services in accordance with their applicable terms.</p>
+
+    <h2>17. Contact</h2>
+    <p>Questions about these terms can be sent to <a href="mailto:<%= site.emails.support %>"><%= site.emails.support %></a>. Sales enquiries should be sent to <a href="mailto:<%= site.emails.sales %>"><%= site.emails.sales %></a>.</p>
+  </div></section>
+</main>
 <%- include('../partials/footer') %>
