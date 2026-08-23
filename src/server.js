@@ -84,6 +84,7 @@ app.get('/', (req, res) => render(req, res, 'home', {
 }));
 app.get('/vps', (req, res) => render(req, res, 'products', {
   title: 'Virtual Private Servers | VPN4U',
+  description: 'NVMe VPS hosting with clear resource specifications, global region options and availability confirmed before payment.',
   heading: 'Virtual private servers',
   eyebrow: 'Fast NVMe compute',
   intro: 'Straightforward VPS hosting with generous traffic, modern processors and global deployment options.',
@@ -93,6 +94,7 @@ app.get('/vps', (req, res) => render(req, res, 'products', {
 }));
 app.get('/dedicated', (req, res) => render(req, res, 'products', {
   title: 'Dedicated Servers | VPN4U',
+  description: 'AMD dedicated servers with NVMe storage, full system control and stock confirmed before payment.',
   heading: 'Dedicated servers',
   eyebrow: 'Bare-metal performance',
   intro: 'Dedicated AMD compute with NVMe storage, full root access and predictable monthly pricing.',
@@ -102,6 +104,7 @@ app.get('/dedicated', (req, res) => render(req, res, 'products', {
 }));
 app.get('/vpn', (req, res) => render(req, res, 'products', {
   title: 'Private VPN Service | VPN4U',
+  description: 'Private VPN connectivity for personal devices and small teams using established encrypted VPN protocols.',
   heading: 'Private VPN',
   eyebrow: 'Encrypted connectivity',
   intro: 'Simple encrypted internet connectivity for personal devices and small teams.',
@@ -110,10 +113,10 @@ app.get('/vpn', (req, res) => render(req, res, 'products', {
   note: 'VPN access is intended for lawful use and remains subject to our Acceptable Use Policy.'
 }));
 
-app.get('/infrastructure', (req, res) => render(req, res, 'infrastructure', { title: 'Infrastructure & Network | VPN4U' }));
-app.get('/about', (req, res) => render(req, res, 'about', { title: 'About VPN4U' }));
-app.get('/faq', (req, res) => render(req, res, 'faq', { title: 'Frequently Asked Questions | VPN4U' }));
-app.get('/contact', (req, res) => render(req, res, 'contact', { title: 'Contact VPN4U' }));
+app.get('/infrastructure', (req, res) => render(req, res, 'infrastructure', { title: 'Infrastructure & Network | VPN4U', description: 'How VPN4U sources and delivers virtual, dedicated and VPN infrastructure through established datacentre and network partners.' }));
+app.get('/about', (req, res) => render(req, res, 'about', { title: 'About VPN4U', description: 'Learn how VPN4U provides supplier-neutral VPS, dedicated server and private VPN services.' }));
+app.get('/faq', (req, res) => render(req, res, 'faq', { title: 'Frequently Asked Questions | VPN4U', description: 'Answers about VPN4U orders, VPS hosting, dedicated servers, VPN service, provisioning, billing, support and policies.' }));
+app.get('/contact', (req, res) => render(req, res, 'contact', { title: 'Contact VPN4U', description: 'Contact VPN4U sales, support, abuse or privacy teams.' }));
 app.post('/contact', enquiryRateLimit, (req, res) => {
   try {
     const result = enquiries.save(req.body);
@@ -159,12 +162,13 @@ app.get('/legal/terms', (req, res) => render(req, res, 'legal/terms', { title: '
 app.get('/legal/privacy', (req, res) => render(req, res, 'legal/privacy', { title: 'Privacy Policy | VPN4U' }));
 app.get('/legal/acceptable-use', (req, res) => render(req, res, 'legal/acceptable-use', { title: 'Acceptable Use Policy | VPN4U' }));
 app.get('/legal/refunds', (req, res) => render(req, res, 'legal/refunds', { title: 'Cancellation & Refund Policy | VPN4U' }));
+app.get('/legal/delivery', (req, res) => render(req, res, 'legal/delivery', { title: 'Delivery & Provisioning Policy | VPN4U' }));
 app.get('/legal/cookies', (req, res) => render(req, res, 'legal/cookies', { title: 'Cookie Policy | VPN4U' }));
 app.get('/legal/abuse', (req, res) => render(req, res, 'legal/abuse', { title: 'Abuse Reporting | VPN4U' }));
 
 app.get('/robots.txt', (_req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /admin/\nSitemap: ${absolute('/sitemap.xml')}\n`));
 app.get('/sitemap.xml', (_req, res) => {
-  const routes = ['/', '/vps', '/dedicated', '/vpn', '/infrastructure', '/about', '/faq', '/contact', '/legal/terms', '/legal/privacy', '/legal/acceptable-use', '/legal/refunds', '/legal/cookies', '/legal/abuse'];
+  const routes = ['/', '/vps', '/dedicated', '/vpn', '/infrastructure', '/about', '/faq', '/contact', '/legal/terms', '/legal/privacy', '/legal/acceptable-use', '/legal/refunds', '/legal/delivery', '/legal/cookies', '/legal/abuse'];
   const urls = routes.map(route => `<url><loc>${absolute(route)}</loc></url>`).join('');
   res.type('application/xml').send(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls}</urlset>`);
 });
