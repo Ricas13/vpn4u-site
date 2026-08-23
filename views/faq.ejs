@@ -1,64 +1,52 @@
 <%- include('partials/head') %>
 <main id="main">
   <section class="pageHero">
-    <div class="container">
-      <span class="kicker">FAQ</span>
-      <h1>Common questions about VPN4U</h1>
-      <p>Ordering, provisioning, infrastructure, support, billing, cancellations and responsible use.</p>
-      <div class="heroPills"><span>VPS</span><span>Dedicated servers</span><span>VPN</span><span>Orders & support</span></div>
+    <div class="container visualHero">
+      <div class="pageHeroCopy">
+        <span class="kicker">FAQ</span>
+        <h1>Answers without the wall of text.</h1>
+        <p>The main questions about ordering, servers, VPN access, support and policies.</p>
+      </div>
+      <img class="pageArtwork" src="/images/hero-infrastructure.svg" alt="Illustration of connected VPN4U services">
     </div>
   </section>
 
   <section class="section">
     <div class="container faqList">
-      <h2>About VPN4U</h2>
-      <details open><summary>What does VPN4U sell?</summary><p>VPN4U sells virtual private servers, dedicated servers and private VPN connectivity. We also review custom infrastructure requirements where capacity is available.</p></details>
-      <details><summary>Does VPN4U own every datacentre and server?</summary><p>No. VPN4U is an independent service provider that sources infrastructure through established datacentre, hosting and network partners. VPN4U manages the customer relationship and the service sold under our brand.</p></details>
-      <details><summary>Why are upstream infrastructure companies not listed on every product?</summary><p>VPN4U sells and supports the customer-facing service. Supplier relationships can vary by product, region, stock and capacity. We describe the service the customer receives rather than requiring customers to contract with or understand each upstream provider.</p></details>
-      <details><summary>Who are the services intended for?</summary><p>Our services are intended for individuals, developers, website operators, agencies, self-hosters, small businesses and teams that need compute or encrypted connectivity for lawful workloads.</p></details>
+      <div class="faqGroup">
+        <h2>Ordering & payment</h2>
+        <details open><summary>How do I place an order?</summary><p>Choose a plan and submit the order-request form. We review availability and the requested configuration before confirming the next step.</p></details>
+        <details><summary>When do I pay?</summary><p>We confirm the requested configuration and availability before payment is requested. The public website does not currently take live payments.</p></details>
+        <details><summary>Are the website prices final?</summary><p>Published prices are indicative retail prices in GBP. Taxes, software licences, setup work or non-standard options can change the final amount, which is confirmed before payment.</p></details>
+        <details><summary>How fast is provisioning?</summary><p>VPS and VPN services are commonly available within one business day after approval. Dedicated servers are normally within 1–3 business days, subject to stock and configuration.</p></details>
+      </div>
 
-      <h2>Ordering and payment</h2>
-      <details><summary>How do I place an order?</summary><p>Choose a plan and submit the order-request form. We review availability and the requested configuration before confirming the next step.</p></details>
-      <details><summary>When do I pay?</summary><p>We confirm the requested configuration and availability before payment is requested. Online payment is not currently required to submit an order request.</p></details>
-      <details><summary>Why is the Pay securely button not active yet?</summary><p>The website currently uses a pre-payment order-review process. The checkout preview shows what the purchase flow will look like, but payment is requested only after VPN4U has confirmed that the requested service can be supplied.</p></details>
-      <details><summary>Are the prices on the website final?</summary><p>Published prices are indicative retail prices in GBP. Taxes, software licences, additional IP addresses, custom storage, control panels, setup work or non-standard configurations may change the final amount. We confirm material changes before payment is requested.</p></details>
-      <details><summary>Do you charge setup fees?</summary><p>Some dedicated-server configurations may include a one-time setup charge. Any setup charge is shown on the product or confirmed before the order is accepted.</p></details>
-      <details><summary>Can businesses request an invoice or custom quote?</summary><p>Yes. Contact sales with the required configuration, location and any company information that should appear on the quote or invoice.</p></details>
+      <div class="faqGroup">
+        <h2>VPS & dedicated servers</h2>
+        <details><summary>Are servers managed?</summary><p>Standard VPS and dedicated products are primarily self-managed infrastructure. You are responsible for the operating system, applications, security updates and backups unless management is explicitly included.</p></details>
+        <details><summary>Do I get root or administrator access?</summary><p>VPS and dedicated-server products are intended to provide administrative access to the operating system unless an accepted order says otherwise.</p></details>
+        <details><summary>Are backups included?</summary><p>Not unless they are explicitly listed in your accepted order. Customers should maintain independent backups of important data.</p></details>
+        <details><summary>Can I request another location or custom hardware?</summary><p>Yes. Send the preferred region and technical requirements to sales. Availability and pricing can vary by location and stock.</p></details>
+      </div>
 
-      <h2>Provisioning and service delivery</h2>
-      <details><summary>How fast is provisioning?</summary><p>VPS and VPN services are commonly available within one business day after order approval. Dedicated servers are normally within 1–3 business days, subject to hardware stock, location and custom configuration.</p></details>
-      <details><summary>What happens if dedicated hardware is out of stock?</summary><p>We can offer the closest available alternative, suggest another location or ask whether you prefer to wait. We do not request payment for a configuration that we know is unavailable.</p></details>
-      <details><summary>Where are services hosted?</summary><p>VPS capacity can be available across Europe, North America and Asia-Pacific. Our standard dedicated range is offered from European datacentres. Exact location is confirmed during ordering.</p></details>
-      <details><summary>Can I request a different location?</summary><p>Yes. Send the required country or region to sales. Availability, pricing and product specifications can vary by location.</p></details>
-      <details><summary>Can I request a custom server?</summary><p>Yes. For dedicated infrastructure, include the preferred CPU class, memory, storage, traffic, uplink and location. We will confirm whether a suitable configuration is available.</p></details>
+      <div class="faqGroup">
+        <h2>VPN</h2>
+        <details><summary>Which protocols are supported?</summary><p>Standard VPN plans are designed around established protocols including WireGuard and OpenVPN where supported by the selected service.</p></details>
+        <details><summary>How many devices can I use?</summary><p>The device allowance is shown on each VPN plan. Choose the plan that matches the number of devices you intend to connect.</p></details>
+        <details><summary>Do you promise complete anonymity?</summary><p>No. A VPN is one privacy and security layer. It does not prevent every form of tracking, make a device immune from malware or make unlawful activity lawful.</p></details>
+        <details><summary>Is there a fixed bandwidth cap?</summary><p>Current plans are advertised without a fixed bandwidth cap, subject to available network capacity, reasonable operation and the Acceptable Use Policy.</p></details>
+      </div>
 
-      <h2>VPS and dedicated servers</h2>
-      <details><summary>Do I get root or administrator access?</summary><p>VPS and dedicated-server products are intended to provide administrative access to the operating system unless a specific managed service says otherwise.</p></details>
-      <details><summary>Are the servers managed or unmanaged?</summary><p>Standard VPS and dedicated products are primarily infrastructure services. Unless your accepted order explicitly includes managed administration, you are responsible for the operating system, applications, updates, security configuration and backups.</p></details>
-      <details><summary>Which operating systems are available?</summary><p>Common Linux distributions are normally the simplest option. Windows or licensed operating systems may require additional licensing and may not be available on every product. Ask sales if a particular operating system is required.</p></details>
-      <details><summary>Are backups included?</summary><p>Do not assume backups are included unless they are explicitly listed in your accepted order. Customers remain responsible for maintaining appropriate independent backups of important data.</p></details>
-      <details><summary>Can I upgrade later?</summary><p>VPS upgrades may be possible depending on platform capacity. Dedicated-server changes can require new hardware or migration. Contact support or sales and we will confirm the available options before making changes.</p></details>
-      <details><summary>Are extra IP addresses available?</summary><p>Additional addressing may be available for a justified technical requirement, subject to regional availability, policy and additional charges. Contact sales with the use case.</p></details>
-      <details><summary>Is DDoS protection included?</summary><p>Network-level protections depend on the underlying service and location. We do not promise a specific mitigation capacity unless it is explicitly stated in the accepted order. Customers with a material DDoS risk should discuss the requirement before ordering.</p></details>
-
-      <h2>VPN service</h2>
-      <details><summary>Which VPN protocols are supported?</summary><p>Our standard VPN plans are designed around established protocols including WireGuard and OpenVPN where supported by the selected service.</p></details>
-      <details><summary>How many devices can I use?</summary><p>The device allowance is shown on each VPN plan. Personal plans are currently listed for up to five devices, while the business plan is listed for up to ten devices.</p></details>
-      <details><summary>Is there a bandwidth limit?</summary><p>Current VPN plans are advertised without a fixed bandwidth cap, but service remains subject to reasonable network operation, available capacity and the Acceptable Use Policy.</p></details>
-      <details><summary>Do you promise a "zero logs" VPN?</summary><p>We do not make an absolute zero-logs claim on this website. Operational, security or account information may be processed where reasonably necessary to deliver and protect the service, subject to our Privacy Policy and applicable law.</p></details>
-      <details><summary>Can I use the VPN to hide illegal or abusive activity?</summary><p>No. VPN access is a privacy and connectivity service, not permission to break the law or violate the rights of others. Activity remains subject to our Acceptable Use Policy.</p></details>
-
-      <h2>Support, cancellation and policies</h2>
-      <details><summary>How do I contact support?</summary><p>Email <a href="mailto:<%= site.emails.support %>"><%= site.emails.support %></a>. Include the service or order reference, a concise description of the problem and relevant timestamps where possible.</p></details>
-      <details><summary>How quickly do you respond?</summary><p>We normally aim to respond to sales and general enquiries within one business day. Resolution time depends on the issue, the service involved and whether an upstream infrastructure provider also needs to investigate.</p></details>
-      <details><summary>How do I cancel?</summary><p>Contact support before the next renewal or invoice date stated in your order or billing communication. Cancellation normally stops future renewal and does not automatically refund an already delivered service period.</p></details>
-      <details><summary>Can I get a refund?</summary><p>Refund eligibility depends on the service, whether provisioning has already taken place, any non-refundable setup or allocation costs and applicable consumer law. See the Cancellation & Refund Policy for the full position.</p></details>
-      <details><summary>Can I use the service for anything I want?</summary><p>No. All services must be used lawfully and in accordance with our Acceptable Use Policy. Malware, phishing, spam, attacks, fraud, illegal content and activity that harms networks or third parties are prohibited.</p></details>
-      <details><summary>How do I report abuse?</summary><p>Email <a href="mailto:<%= site.emails.abuse %>"><%= site.emails.abuse %></a> with the relevant IP address or hostname, timestamps with timezone, a description of the issue and supporting evidence where available.</p></details>
-      <details><summary>Where can I read the legal policies?</summary><p>The footer links to our Terms of Service, Privacy Policy, Acceptable Use Policy, Cancellation & Refund Policy, Cookie Policy and Abuse Reporting page.</p></details>
+      <div class="faqGroup">
+        <h2>Support, cancellations & policies</h2>
+        <details><summary>How do I contact support?</summary><p>Email <a href="mailto:<%= site.emails.support %>"><%= site.emails.support %></a> and include the order or service reference where possible.</p></details>
+        <details><summary>How do I cancel?</summary><p>Contact support before the next renewal or invoice date stated in your order or billing communication. Cancellation normally stops future renewal.</p></details>
+        <details><summary>Can I get a refund?</summary><p>Refund eligibility depends on the service, whether provisioning has started, any setup or allocation costs and applicable law. See the Cancellation & Refund Policy for details.</p></details>
+        <details><summary>How do I report abuse?</summary><p>Email <a href="mailto:<%= site.emails.abuse %>"><%= site.emails.abuse %></a> with relevant IP addresses or hostnames, timestamps and supporting evidence where available.</p></details>
+      </div>
     </div>
   </section>
 
-  <section class="section sectionMuted"><div class="container cta"><div><span class="kicker">Still unsure?</span><h2>Ask before you order.</h2><p>Send the workload, preferred location and approximate resource requirements. We can help narrow down the appropriate service.</p></div><a class="button" href="/contact">Contact VPN4U</a></div></section>
+  <section class="section sectionMuted"><div class="container cta"><div><span class="kicker">Still unsure?</span><h2>Ask us before you order.</h2><p>Send the workload, preferred location and approximate resource requirements. We can help narrow down the right service.</p></div><a class="button" href="/contact">Contact VPN4U</a></div></section>
 </main>
 <%- include('partials/footer') %>
